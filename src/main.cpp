@@ -1,8 +1,14 @@
 #include <iostream>
+#include <fstream>
+#include "maze.h"
 
-using namespace std;
+int main()
+{
+    std::ifstream ifs("tests/test.txt");
 
-int main() {
-    cout << "Hello World!" << endl;
+    Maze maze;
+    read_maze(ifs, maze);
+    std::cout << maze;
+
     return 0;
 }
