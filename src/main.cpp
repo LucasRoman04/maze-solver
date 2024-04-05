@@ -8,7 +8,9 @@ using namespace std;
 
 int main()
 {
-    ifstream ifs("tests/test3.txt");
+    string maze_filename = "tests/test.txt";
+
+    ifstream ifs(maze_filename);
 
     Maze maze;
     read_maze(ifs, maze);
